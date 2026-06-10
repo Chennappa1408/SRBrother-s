@@ -9,6 +9,7 @@ export class general extends global {
     public async openApplication() {
 
         await this.page1.goto(this.url);
+        
         console.log('Application is opened');
 
     }
