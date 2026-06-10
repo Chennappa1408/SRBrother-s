@@ -1,0 +1,4 @@
+Application is opened successfully
+Application is opened
+Waited for 3000 milliseconds
+Login successful

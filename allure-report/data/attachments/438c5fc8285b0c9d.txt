@@ -1,0 +1,7 @@
+Application is opened
+Login successful
+Employee details added successfully
+Employee added successfully
+Logout successful
+Logout is successful
+Waited for 3000 milliseconds

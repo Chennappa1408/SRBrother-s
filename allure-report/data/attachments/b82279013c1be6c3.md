@@ -1,0 +1,262 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Listpage_Testsuite.spec.ts >> List of Test Suite for 69Batch >> TC04_DeleteEmp
+- Location: tests\Listpage_Testsuite.spec.ts:43:9
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - table [ref=e2]:
+    - rowgroup [ref=e3]:
+      - row [ref=e4]:
+        - cell [ref=e5]:
+          - img [ref=e6]
+        - cell [ref=e7]
+  - table [ref=e8]:
+    - rowgroup [ref=e9]:
+      - row [ref=e10]:
+        - cell [ref=e11]:
+          - table [ref=e12]:
+            - rowgroup [ref=e13]:
+              - row [ref=e14]:
+                - cell [ref=e15]
+                - cell [ref=e16]
+                - cell [ref=e17]
+                - cell [ref=e18]
+                - cell [ref=e19]
+                - cell [ref=e20]
+  - generic [ref=e21]:
+    - table [ref=e22]:
+      - rowgroup [ref=e23]:
+        - 'row "Login Name : Password : Login Clear Orange HRM comes as a comprehensive solution for the efficient management and development of your Human Resource. It will assist you in the complex and strategic process of managing this crucial resource of your enterprise. Based on modular architecture, it facilitates a vast range of HR activities, with features that reflect the main HR management activities. It comes as a web-enabled application and considering the available flexibility, OrangeHRM is a perfect platform for reengineering your HR processes and achieving a new level of HR Management." [ref=e24]':
+          - cell [ref=e25]
+          - 'cell "Login Name : Password : Login Clear Orange HRM comes as a comprehensive solution for the efficient management and development of your Human Resource. It will assist you in the complex and strategic process of managing this crucial resource of your enterprise. Based on modular architecture, it facilitates a vast range of HR activities, with features that reflect the main HR management activities. It comes as a web-enabled application and considering the available flexibility, OrangeHRM is a perfect platform for reengineering your HR processes and achieving a new level of HR Management." [ref=e26]':
+            - table [ref=e27]:
+              - rowgroup [ref=e28]:
+                - 'row "Login Name : Password : Login Clear" [ref=e29]':
+                  - cell [ref=e30]
+                  - 'cell "Login Name : Password : Login Clear" [ref=e31]':
+                    - img [ref=e32]
+                    - table [ref=e33]:
+                      - rowgroup [ref=e34]:
+                        - row [ref=e35]:
+                          - cell [ref=e36]
+                          - cell [ref=e37]
+                        - row "Login Name :" [ref=e38]:
+                          - cell "Login Name :" [ref=e39]
+                          - cell [ref=e40]:
+                            - textbox [ref=e41]
+                        - row "Password :" [ref=e42]:
+                          - cell "Password :" [ref=e43]
+                          - cell [ref=e44]:
+                            - textbox [ref=e45]
+                        - row "Login Clear" [ref=e46]:
+                          - cell "Login" [ref=e47]:
+                            - button "Login" [ref=e48]
+                          - cell "Clear" [ref=e49]:
+                            - button "Clear" [ref=e50]
+                        - row [ref=e51]:
+                          - cell [ref=e52]
+                          - cell [ref=e53]:
+                            - strong [ref=e54]
+                  - cell [ref=e55]:
+                    - img [ref=e56]
+                  - cell [ref=e57]
+                - row [ref=e58]:
+                  - cell [ref=e59]
+                - row [ref=e60]:
+                  - cell [ref=e61]
+                - row [ref=e62]:
+                  - cell [ref=e63]:
+                    - img [ref=e64]
+                  - cell [ref=e65]
+                - row "Orange HRM comes as a comprehensive solution for the efficient management and development of your Human Resource. It will assist you in the complex and strategic process of managing this crucial resource of your enterprise. Based on modular architecture, it facilitates a vast range of HR activities, with features that reflect the main HR management activities. It comes as a web-enabled application and considering the available flexibility, OrangeHRM is a perfect platform for reengineering your HR processes and achieving a new level of HR Management." [ref=e66]:
+                  - cell [ref=e67]
+                  - cell "Orange HRM comes as a comprehensive solution for the efficient management and development of your Human Resource. It will assist you in the complex and strategic process of managing this crucial resource of your enterprise. Based on modular architecture, it facilitates a vast range of HR activities, with features that reflect the main HR management activities. It comes as a web-enabled application and considering the available flexibility, OrangeHRM is a perfect platform for reengineering your HR processes and achieving a new level of HR Management." [ref=e68]:
+                    - table [ref=e69]:
+                      - rowgroup [ref=e70]:
+                        - row "Orange HRM comes as a comprehensive solution for the efficient management and development of your Human Resource. It will assist you in the complex and strategic process of managing this crucial resource of your enterprise. Based on modular architecture, it facilitates a vast range of HR activities, with features that reflect the main HR management activities. It comes as a web-enabled application and considering the available flexibility, OrangeHRM is a perfect platform for reengineering your HR processes and achieving a new level of HR Management." [ref=e71]:
+                          - cell "Orange HRM comes as a comprehensive solution for the efficient management and development of your Human Resource. It will assist you in the complex and strategic process of managing this crucial resource of your enterprise. Based on modular architecture, it facilitates a vast range of HR activities, with features that reflect the main HR management activities. It comes as a web-enabled application and considering the available flexibility, OrangeHRM is a perfect platform for reengineering your HR processes and achieving a new level of HR Management." [ref=e72]
+                - row [ref=e73]:
+                  - cell [ref=e74]:
+                    - img [ref=e75]
+                  - cell [ref=e76]
+                - row [ref=e77]:
+                  - cell [ref=e78]
+                  - cell [ref=e79]
+                - row [ref=e80]:
+                  - cell [ref=e81]
+                  - cell [ref=e82]
+                  - cell [ref=e83]
+                  - cell [ref=e84]
+                  - cell [ref=e85]
+                  - cell [ref=e86]
+          - cell [ref=e87]
+    - table [ref=e88]:
+      - rowgroup [ref=e89]:
+        - row "SureshIT" [ref=e90]:
+          - cell "SureshIT" [ref=e91]:
+            - link "SureshIT" [ref=e92] [cursor=pointer]:
+              - /url: "#"
+```
+
+# Test source
+
+```ts
+  1   | // To provide re-usable methods/ functions and utilities related to whole application.
+  2   | 
+  3   | import { global } from './Global';
+  4   | import { expect } from '@playwright/test';
+  5   | 
+  6   | export class general extends global {
+  7   |     //User-define funtions/ methods
+  8   |     //Open Application
+  9   |     public async openApplication() {
+  10  | 
+  11  |         await this.page1.goto(this.url);
+  12  |         console.log('Application is opened');
+  13  | 
+  14  |     }
+  15  | 
+  16  |     //Login to application.
+  17  |     public async login() {
+  18  |         await this.page1.locator(this.textbox_loginname).fill(this.username);
+  19  |         await this.page1.locator(this.textbox_password).fill(this.password);
+  20  |         await this.page1.locator(this.button_login).click();
+  21  |         //await this.page1.click(this.button_login);
+  22  |         console.log('Login successful');
+  23  | 
+  24  |     }
+  25  | 
+  26  |     //logout from application.
+  27  |     public async logout() {
+  28  |         await this.page1.locator(this.link_logout).click();
+  29  |          await this.page1.waitForTimeout(3000);
+  30  |         console.log('Logout successful');
+  31  |     }
+  32  | 
+  33  |     //Add employee details
+  34  |     public async addNewEmployee() {
+  35  |         let frame = this.page1.frameLocator(this.iframe_addemp);
+  36  |         await frame.locator(this.link_addemp).click();
+  37  |         await frame.locator(this.textbox_empfirstname).fill(this.empfirstname);
+  38  |         await frame.locator(this.textbox_emplastname).fill(this.emplastname);
+  39  |         await frame.locator(this.button_save).click();
+  40  |         await this.page1.waitForTimeout(3000);
+  41  |         console.log("Employee details added successfully")
+  42  |     }
+  43  | 
+  44  |     //for waiting for some time
+  45  |     public async waitForSomeTime(time: number) {
+> 46  |         await this.page1.waitForTimeout(time);
+      |                          ^ Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
+  47  |         console.log(`Waited for ${time} milliseconds`);
+  48  |     }
+  49  |     public async waitTime(time: number) {
+  50  |         await this.page1.waitForTimeout(time);
+  51  |         console.log(`waited for ${time} misseconds`);
+  52  |     }
+  53  | 
+  54  |     public async searchAndDeleteEmployee() {
+  55  |         let iframe = this.page1.frameLocator(this.iframe_Empdetails_page);
+  56  |         await iframe.locator(this.search_empid_dropdown).selectOption({ value: "0" });
+  57  |         await iframe.locator(this.search_empid_textbox).fill(this.deleteEmpid);
+  58  |         await iframe.locator(this.button_search).click();
+  59  |         await this.page1.waitForTimeout(3000);
+  60  |         await iframe.locator(this.select_checkbox).check();
+  61  |         await iframe.locator("//input[@value='Delete']").click();
+  62  |         await this.page1.waitForTimeout(3000);
+  63  |         console.log("Deleted employee details successfully");
+  64  |     }
+  65  | 
+  66  |     public async validateDeleteEmployee() {
+  67  |         let iframe = this.page1.frameLocator(this.iframe_Empdetails_page);
+  68  |         //await iframe.locator(this.delete_verification_text).tohaveText("Successfully Deleted")
+  69  | 
+  70  |         let text = await iframe.locator(this.delete_verification_text).textContent();
+  71  |         console.log("Validate text: ", text);
+  72  |         //await expect(text).toHaveText(this.Expected_delete_text).
+  73  | 
+  74  |         console.log("Employee details deleted successfully");
+  75  |     }
+  76  |     public async searchAndEditEmployee() {
+  77  |         let iframe = this.page1.frameLocator(this.iframe_Empdetails_page);
+  78  |         await iframe.locator(this.search_empid_dropdown).selectOption({ value: "0" });
+  79  |         await iframe.locator(this.search_empid_textbox).fill(this.empid);
+  80  |         await iframe.locator(this.button_search).click();
+  81  |         await this.page1.waitForTimeout(3000);
+  82  |         await iframe.locator(this.select_checkbox).check();
+  83  |         await iframe.locator(this.link_Empdetails).click();
+  84  |         await iframe.locator(this.button_Edit_empdetails).click();
+  85  |         await iframe.locator(this.firstname_textbox).clear();
+  86  |         await iframe.locator(this.firstname_textbox).fill(this.Edited_empfirstname);
+  87  |         await iframe.locator(this.lastname_textbox).clear();
+  88  |         await iframe.locator(this.lastname_textbox).fill(this.Edited_emplastname);
+  89  |         await iframe.locator(this.button_save_empdetails).click();
+  90  |         await this.page1.waitForTimeout(3000);
+  91  |         console.log("Edited employee details successfully");
+  92  |     }
+  93  | 
+  94  |     public async resetEmployeeDetails() {
+  95  |         let iframe = this.page1.frameLocator(this.iframe_Empdetails_page);
+  96  |         await iframe.locator(this.search_empid_dropdown).selectOption({ value: "0" });
+  97  |         await iframe.locator(this.search_empid_textbox).fill(this.reset_empid);
+  98  |         await iframe.locator(this.button_search).click();
+  99  |         await this.page1.waitForTimeout(3000);
+  100 |         await iframe.locator(this.select_checkbox).check();
+  101 |         await iframe.locator(this.button_reset_empdetails).click();
+  102 |         await this.page1.waitForTimeout(3000);
+  103 |         console.log("Reset employee details successfully");
+  104 |     }
+  105 |     public async listofTheEmployees() {
+  106 |         await this.page1.getByText(this.PIM_module_text).hover();
+  107 |         await this.page1.waitForTimeout(3000);
+  108 |         console.log("Mouseover PIM module has been completed")
+  109 |         //Click on Add emplyee sub menu tab
+  110 |         await this.page1.getByText(this.Add_employee_text).click();
+  111 |         console.log("Clicking on Add employee option on PIM Module")
+  112 |         await this.page1.waitForTimeout(3000);
+  113 |         await this.page1.getByText(this.PIM_module_text).hover();
+  114 |         await this.page1.waitForTimeout(3000);
+  115 |         await this.page1.getByText(this.Employee_list_text).click();
+  116 |         console.log("Clicking on Employee list option on PIM Module")
+  117 |         await this.page1.waitForTimeout(3000);
+  118 |     }
+  119 | public async addBug (){
+  120 | console.log("Clicking on Add employee option on Bug Reporter Module")
+  121 |         await this.page1.locator(this.link_Bugreport).click();
+  122 |         let ifrmae = this.page1.frameLocator(this.iframe_addemp);
+  123 |         await ifrmae.locator(this.Category_dropdown).selectOption( {value: "813016"});
+  124 |         await ifrmae.locator(this.module_dropdown).selectOption({value:"PIM"});
+  125 |         await ifrmae.locator(this.priority_dropdown).selectOption({index: 1});
+  126 |         await ifrmae.locator(this.summery_Textbox).fill(this.summery);
+  127 |         await ifrmae.locator(this.description_textbox).fill(this.Bug_description);
+  128 | 
+  129 |         await ifrmae.locator(this.Bug_save_Button).click();
+  130 |         await this.page1.waitForTimeout(3000);
+  131 |         console.log("Reported Bug")
+  132 | 
+  133 | 
+  134 | }
+  135 | 
+  136 | 
+  137 | 
+  138 | }
+```

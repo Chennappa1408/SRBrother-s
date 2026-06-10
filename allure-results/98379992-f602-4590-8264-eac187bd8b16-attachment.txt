@@ -1,0 +1,8 @@
+Application is opened
+Application is opened successfully
+Login successful
+Login is successful
+waited for 3000 misseconds
+Logout successful
+Logout is successful
+Waited for 4000 milliseconds

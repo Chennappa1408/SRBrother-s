@@ -1,0 +1,10 @@
+Application is opened
+Application is opened successfully
+Waited for 3000 milliseconds
+Login successful
+Deleted employee details successfully
+Employee is deleted successfully
+Logout successful
+Logout is successful
+Waited for 3000 milliseconds
+Waited for 3000 milliseconds

@@ -1,0 +1,11 @@
+Application is opened successfully
+Application is opened
+Waited for 3000 milliseconds
+Login successful
+Mouseover PIM module has been completed
+Clicking on Add employee option on PIM Module
+Clicking on Employee list option on PIM Module
+List of employees is displayed successfully
+Logout successful
+Logout is successful
+Waited for 3000 milliseconds

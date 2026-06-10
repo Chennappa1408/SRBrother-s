@@ -1,0 +1,6 @@
+Application is opened
+Login successful
+Clicking on Add employee option on Bug Reporter Module
+Reported Bug
+Logout successful
+Waited for 3000 milliseconds

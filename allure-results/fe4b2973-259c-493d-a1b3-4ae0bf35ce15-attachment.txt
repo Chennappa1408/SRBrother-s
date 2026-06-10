@@ -1,0 +1,3 @@
+Application is opened
+Application is opened successfully
+Waited for 3000 milliseconds
