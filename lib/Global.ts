@@ -20,9 +20,9 @@ public empfirstname : string = "Chennappa";
 public emplastname : string = "Sathwik";
 
 //Search employee details
-public empid : string = "5690";
-public reset_empid : string = "5691";
-public deleteEmpid : string = "5692";
+public empid : string = "5988";
+public reset_empid : string = "5989";
+public deleteEmpid : string = "5990";
 
 //Expected text after deleting employee details
 public Expected_delete_text : string = "Successfully Deleted";
@@ -84,5 +84,7 @@ public description_textbox = "//textarea[@id='txtDescription']";
 //public button_submit = "//input[@id='btnEdit']";
 public Bug_save_Button = "//input[@id='saveBtn']";
 
-
+/* 
+end of the element for the applications
+*/
 }

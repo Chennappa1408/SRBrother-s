@@ -134,5 +134,5 @@ console.log("Clicking on Add employee option on Bug Reporter Module")
 }
 
 
-
+//This is the last method of the applciation
 }
