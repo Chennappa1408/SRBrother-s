@@ -20,9 +20,9 @@ public empfirstname : string = "Chennappa";
 public emplastname : string = "Sathwik";
 
 //Search employee details
-public empid : string = "5988";
-public reset_empid : string = "5989";
-public deleteEmpid : string = "5990";
+public empid : string = "5991";
+public reset_empid : string = "5992";
+public deleteEmpid : string = "5993";
 
 //Expected text after deleting employee details
 public Expected_delete_text : string = "Successfully Deleted";

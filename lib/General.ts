@@ -129,6 +129,7 @@ console.log("Clicking on Add employee option on Bug Reporter Module")
         await ifrmae.locator(this.Bug_save_Button).click();
         await this.page1.waitForTimeout(3000);
         console.log("Reported Bug")
+        await this.page1.waitForTimeout(3000);
 
 
 }
