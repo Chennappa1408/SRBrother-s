@@ -14,6 +14,4 @@ test('TC03_EditEmp', async ({ page }) => {
     console.log("Logout is successful resring purpose");
     await gen.waitForSomeTime(3000);
     //this is the last statement
-    console.log("Demo is successful for GIT Operations purpose");
-    //testing
 });
