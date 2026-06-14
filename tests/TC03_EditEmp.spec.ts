@@ -11,6 +11,7 @@ test('TC03_EditEmp', async ({ page }) => {
     await gen.searchAndEditEmployee();
     console.log("Employee details edited successfully");
     await gen.logout();
-    console.log("Logout is successful");
+    console.log("Logout is successful resring purpose");
     await gen.waitForSomeTime(3000);
+    //this is the last statement
 });
