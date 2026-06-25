@@ -17,6 +17,7 @@ export class general extends global {
     //Login to application.
     public async login() {
         await this.page1.locator(this.textbox_loginname).fill(this.username);
+        //await this.page1.fill(this.textbox_loginname, this.username)
         await this.page1.locator(this.textbox_password).fill(this.password);
         await this.page1.locator(this.button_login).click();
         //await this.page1.click(this.button_login);
@@ -130,6 +131,7 @@ console.log("Clicking on Add employee option on Bug Reporter Module")
         await ifrmae.locator(this.Bug_save_Button).click();
         await this.page1.waitForTimeout(3000);
         console.log("Reported Bug")
+        await this.page1.waitForTimeout(3000);
 
 
 }

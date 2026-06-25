@@ -54,6 +54,7 @@ export default defineConfig({
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
+    ///added commit
  */
     /* Test against mobile viewports. */
     // {
