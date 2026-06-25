@@ -49,12 +49,11 @@ export default defineConfig({
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
     },
-
+      //added code for future purpose
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
-    ///added commit
  */
     /* Test against mobile viewports. */
     // {
