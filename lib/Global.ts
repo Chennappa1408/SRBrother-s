@@ -3,7 +3,7 @@
 import { Page } from "@playwright/test";
 
 export class global {
-
+    
 constructor(public page1: Page) {
 
     this.page1 = page1;

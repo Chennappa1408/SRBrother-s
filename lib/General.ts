@@ -16,6 +16,7 @@ export class general extends global {
     //Login to application.
     public async login() {
         await this.page1.locator(this.textbox_loginname).fill(this.username);
+        //await this.page1.fill(this.textbox_loginname, this.username)
         await this.page1.locator(this.textbox_password).fill(this.password);
         await this.page1.locator(this.button_login).click();
         //await this.page1.click(this.button_login);

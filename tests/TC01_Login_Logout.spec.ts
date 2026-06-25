@@ -12,4 +12,6 @@ test('TC01_Login_Logout', async ({ page }) => {
     console.log("Logout is successful") 
     await gen.waitForSomeTime(4000); 
     //this is last statement of the page
+
+    
 });
